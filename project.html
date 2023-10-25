@@ -2,60 +2,41 @@
 
 <html>
   <head>
+    <meta charset="UTF-8" />
     <title>A Meaningful Page Title</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        background-color: powderblue;
-      }
-      .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px 10px;
-      }
-      .each {
-        border: 2px solid #008000;
-      }
-      .imag {
-        margin-bottom: 10px;
-      }
-      .img {
-        width: 100%;
-        height: 200px;
-
-        border: 2px solid #008000;
-        object-fit: cover;
-      }
-      .details {
-        display: grid;
-        grid-template-columns: 50px 1fr;
-      }
-      .detail-img {
-        width: 50px;
-        display: flex;
-        justify-content: center;
-      }
-      .profile-img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-      }
-      .video-info {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      .video-author {
-        color: rgb(96, 96, 96);
-      }
-    </style>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
   </head>
   <body>
-    <input type="text" placeholder="search" />
+    <div class="header">
+      <div class="left">
+        <img class="hamburger" src="icons/hamburger-menu.svg" alt="" />
+        <img class="youtube" src="icons/youtube-logo.svg" alt="" />
+      </div>
+      <div class="middle">
+        <input class="search-bar" type="text" placeholder="search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="" srcset="" />
+        </button>
+        <button class="voice-search">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="" />
+        </button>
+      </div>
+
+      <div class="right">
+        <img class="upload-icon" src="icons/upload.svg" alt="" srcset="" />
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" alt="" srcset="" />
+        <img class="notifications-icon" src="icons/notifications.svg" alt="" srcset="" />
+        <img
+          class="currentuser-icon"
+          src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+          srcset=""
+        />
+      </div>
+    </div>
+
     <div class="container">
       <div class="each">
         <div class="imag">
