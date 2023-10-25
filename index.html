@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>A Meaningful Page Title</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: powderblue;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .each {
+        width: 300px;
+
+        border: 2px solid #008000;
+      }
+      .imag {
+      }
+      .img {
+        width: 100%;
+        height: 200px;
+
+        border: 2px solid #008000;
+        object-fit: cover;
+      }
+      .details {
+        display: flex;
+      }
+      .detail-img {
+        width: 50px;
+      }
+      .profile-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .video-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="search" />
+    <div class="container">
+      <div class="each">
+        <div class="imag">
+          <img class="img" src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+        </div>
+        <div class="details">
+          <div class="detail-img">
+            <img
+              class="profile-img"
+              src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p>Talking tech and AL with google Ceo sundar pichai</p>
+            <p>Vipin Devan</p>
+            <p>2345 views 5 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="each">
+        <div class="imag">
+          <img
+            class="img"
+            src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <div class="detail-img">
+            <img
+              class="profile-img"
+              src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p>Talking tech and AL</p>
+            <p>Vipin Devan</p>
+            <p>2345 views 5 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="each">
+        <div class="imag">
+          <img class="img" src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+        </div>
+        <div class="details">
+          <div class="detail-img">
+            <img
+              class="profile-img"
+              src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p>Talking tech and AL with google Ceo sundar pichai and many other things</p>
+            <p>Vipin Devan</p>
+            <p>2345 views 5 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="each">
+        <div class="imag">
+          <img class="img" src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+        </div>
+        <div class="details">
+          <div class="detail-img">
+            <img
+              class="profile-img"
+              src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p>Talking tech and AL with google Ceo sundar pichai and many other things</p>
+            <p>Vipin Devan</p>
+            <p>2345 views 5 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="each">
+        <div class="imag">
+          <img class="img" src="https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" />
+        </div>
+        <div class="details">
+          <div class="detail-img">
+            <img
+              class="profile-img"
+              src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p>Talking tech and AL with google Ceo sundar pichai and many other things</p>
+            <p>Vipin Devan</p>
+            <p>2345 views 5 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const par = document.getElementsByClassName('container').length;
+      document.getElementById('demo').innerHTML = par;
+      document.querySelector('.data').innerHTML = par;
+    </script>
+  </body>
+</html>
