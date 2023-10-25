@@ -8,6 +8,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 100;
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -99,4 +100,18 @@
   height: 36px;
   width: 36px;
   border-radius: 50%;
+}
+
+.notifications-set {
+  position: relative;
+}
+.notifications-count {
+  position: absolute;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  top: -2px;
+  right: -5px;
+  font-size: 10px;
+  padding: 2px 5px;
 }
