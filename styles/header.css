@@ -3,6 +3,15 @@
   display: flex;
   background: white;
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(236, 232, 232);
 }
 
 .left {
