@@ -4,9 +4,11 @@
   margin: 0;
 }
 body {
+  color: red;
   background-color: lightcyan;
   padding-top: 60px;
   padding-left: 96px;
   padding-right: 24px;
   background-color: rgb(247, 247, 247);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }

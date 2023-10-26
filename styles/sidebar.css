@@ -7,6 +7,7 @@
   width: 72px;
   z-index: 200;
   padding-top: 5px;
+  color: plum;
 }
 
 .sidebar-links {
@@ -27,5 +28,6 @@
   margin-bottom: 5px;
 }
 .sidebar-links div {
+  font-weight: 700;
   font-size: 12px;
 }
