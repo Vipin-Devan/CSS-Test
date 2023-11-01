@@ -6,10 +6,19 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="box"></div>
     <style>
       body {
         background-color: beige;
       }
     </style>
+    <script>
+      let div = document.querySelector('div');
+      div.style.height = '350px';
+      div.style.width = '350px';
+      div.style.backgroundColor = 'purple';
+      div.style.textAlign = 'center';
+      div.innerHTML = 'THAT SUCKS';
+    </script>
   </body>
 </html>
