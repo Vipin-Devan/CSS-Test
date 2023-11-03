@@ -46,23 +46,20 @@
       //   .then((res) => res.json())
       //   .then((data) => cities.push(...data));
       // console.log(cities);
-      const li = document.createElement('li');
-      li.className = 'name';
-      list.appendChild('li');
-      li.innerHTML = 'ko';
 
-      // let html = cities
-      //   .map((city) => {
-      //     const li = document.createElement('li');
-      //     const span = document.createElement('span');
-      //     span.className = 'name';
-      //     span.innerHTML = city.city;
-      //     li.appendChild('span');
-      //     return li;
-      //   })
-      //   .map((element) => element.outerHTML)
-      //   .join('');
-      // list.innerHTML = html;
+      let html = cities
+        .map((city) => {
+          const li = document.createElement('li');
+          const span = document.createElement('span');
+          span.className = 'name';
+          span.innerText = city.city;
+          li.appendChild(span);
+          return li;
+        })
+        .map((element) => element.outerHTML)
+        .join('');
+
+      list.innerHTML = html;
       list.addEventListener('click', function (e) {
         e.target.classList.toggle('open');
       });
