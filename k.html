@@ -46,18 +46,19 @@
         .then((res) => res.json())
         .then((data) => cities.push(...data));
       console.log(cities);
-
+      const li = document.createElement('li');
+      list.innerHTML = li;
       let html = cities
         .map((city) => {
           return `
-        <li>
+     
           <span class="name">${city.city}</span>
 
-          </li>
+          
         `;
         })
         .join('');
-      list.innerHTML = html;
+      li.innerHTML = html;
 
       list.addEventListener('click', function (e) {
         e.target.classList.toggle('open');
