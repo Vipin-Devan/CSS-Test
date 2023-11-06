@@ -54,9 +54,9 @@
           span.className = 'name';
           span.innerText = city.city;
           li.appendChild(span);
-          return li;
+          return li.outerHTML;
         })
-        .map((element) => element.outerHTML)
+
         .join('');
 
       list.innerHTML = html;
