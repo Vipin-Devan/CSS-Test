@@ -2,10 +2,31 @@
 <html>
   <head>
     <title>CHeck button</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <button id="check"></button>
-    <button id="check"></button>
-    <button id="check"></button>
+    <div>
+      <button id="check">⚽️ MESSI</button>
+      <button id="test">🦄RONALDO</button>
+      <button id="real">🐼 NEYMAR</button>
+    </div>
+    <script>
+      const btns = document.querySelectorAll('button[id]');
+
+      for (const btn of btns) {
+        btn.addEventListener('click', showMessage);
+      }
+      function showMessage(e) {
+        const explanation = {
+          check: 'MESSI IS THE GOAT',
+          test: 'Ronaldo is good',
+          real: 'NEYMAR WAD THE DEAL',
+        };
+      }
+    </script>
   </body>
 </html>
