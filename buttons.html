@@ -6,6 +6,9 @@
       body {
         text-align: center;
       }
+      .result {
+        background-color: blue;
+      }
     </style>
   </head>
   <body>
@@ -15,7 +18,7 @@
       <button id="real">🐼 NEYMAR</button>
       <button id="rel">🐼 NMAR</button>
     </div>
-    <p id="result"></p>
+    <p id="result" class="result"></p>
 
     <script>
       const btns = document.querySelectorAll('button[id]');
@@ -30,6 +33,11 @@
           real: 'NEYMAR WAD THE DEAL',
         };
         explanation[this.id] ? (result.textContent = explanation[this.id]) : (result.textContent = 'nothing to show');
+      }
+
+      result.onclick = ondelete;
+      function ondelete() {
+        this.classList.toggle('result');
       }
     </script>
   </body>
