@@ -13,12 +13,13 @@
   </head>
   <body>
     <div>
-      <button id="check">⚽️ MESSI</button>
-      <button id="test">🦄RONALDO</button>
-      <button id="real">🐼 NEYMAR</button>
-      <button id="rel">🐼 NMAR</button>
+      <button id="check" data-id="1">MESSI</button>
+      <button id="test" data-id="2">RONALDO</button>
+      <button id="real" data-id="3">NEYMAR</button>
+      <button id="rel" data-id="4">NiMAR</button>
     </div>
     <p id="result" class="result"></p>
+    <span class="a b">ClassList a b</span>
 
     <script>
       const btns = document.querySelectorAll('button[id]');
@@ -28,16 +29,27 @@
       }
       function showMessage(e) {
         const explanation = {
-          check: 'MESSI IS THE GOAT',
-          test: 'Ronaldo is good',
-          real: 'NEYMAR WAD THE DEAL',
+          MESSI: 'MESSI IS THE GOAT',
+          RONALDO: 'Ronaldo is good',
+          NEYMAR: 'NEYMAR WAD THE DEAL',
         };
-        explanation[this.id] ? (result.textContent = explanation[this.id]) : (result.textContent = 'nothing to show');
+        // explanation[this.dataset.id] ? (result.textContent = explanation[this.dataset.id]) : (result.textContent = 'nothing to show');
+        explanation[this.innerHTML] ? (result.textContent = explanation[this.innerHTML]) : (result.textContent = 'nothing to show');
       }
 
       result.onclick = ondelete;
       function ondelete() {
         this.classList.toggle('result');
+      }
+
+      const span = document.querySelector('span');
+      const classes = span.classList;
+
+      span.onclick = ontoggle;
+      function ontoggle() {
+        let result = classes.toggle('c');
+        console.log(result);
+        span.innerHTML = `"c" ${result ? 'added' : 'removed'} ; Classlist ${classes} `;
       }
     </script>
   </body>
