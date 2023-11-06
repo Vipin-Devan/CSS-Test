@@ -13,12 +13,15 @@
       <button id="check">⚽️ MESSI</button>
       <button id="test">🦄RONALDO</button>
       <button id="real">🐼 NEYMAR</button>
+      <button id="rel">🐼 NMAR</button>
     </div>
+    <p id="result"></p>
+
     <script>
       const btns = document.querySelectorAll('button[id]');
 
       for (const btn of btns) {
-        btn.addEventListener('click', showMessage);
+        btn.onclick = showMessage;
       }
       function showMessage(e) {
         const explanation = {
@@ -26,6 +29,7 @@
           test: 'Ronaldo is good',
           real: 'NEYMAR WAD THE DEAL',
         };
+        explanation[this.id] ? (result.textContent = explanation[this.id]) : (result.textContent = 'nothing to show');
       }
     </script>
   </body>
