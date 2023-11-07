@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --color: blue;
+      }
+      body {
+        background-color: black;
+      }
+      #title {
+        text-align: center;
+        color: var(--color);
+        background-color: blueviolet;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: var(--color);
+        position: relative;
+        animation: square;
+        align-self: 4s;
+      }
+      .groovy {
+        color: transparent;
+        font-size: 8em;
+        font-weight: bold;
+
+        background-image: linear-gradient(to right, red, yellow);
+        background-image: url(https://images.pexels.com/photos/1015568/pexels-photo-1015568.jpeg?auto=compress&cs=tinysrgb&w=800);
+        text-align: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+      }
+
+      .scoped {
+        --font-size: 8em;
+        --cr: yellow;
+        --bc: 1px solid green;
+      }
+      .dance {
+        color: var(--cr);
+        border: var(--bc);
+        width: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">Animations</h1>
+    <div class="scoped">
+      <p class="dance">Dance party</p>
+    </div>
+    <p class="groovy">Groovy party</p>
+  </body>
+</html>

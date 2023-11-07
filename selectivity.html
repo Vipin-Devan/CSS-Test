@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="" />
+    <style>
+      #container {
+        color: blue;
+      }
+      p {
+        color: red;
+      }
+      /* sets value to inherit from the container */
+      .inherit {
+        color: inherit;
+      }
+      /* set value back to deafult browser style */
+      .initial {
+        color: initial;
+      }
+      /* if user has defined style revert back to it otherwise default browser style */
+      .revert {
+        color: revert;
+      }
+      /* elemnt natually inherited actsl like inherit other like initial */
+      .unset {
+        color: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <p class="inherit">inherit</p>
+      <p class="initial">initial</p>
+      <p class="revert">revert</p>
+      <p class="unset">unset</p>
+    </div>
+  </body>
+</html>

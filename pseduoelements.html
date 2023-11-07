@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #paragraph::first-letter {
+        color: lightgreen;
+        font-size: 50px;
+        text-shadow: 1px 1px 3px grey;
+      }
+      /* highlihting */
+      ::selection {
+        color: white;
+        background-color: red;
+      }
+
+      .plus::after {
+        content: '+';
+      }
+      .plus::before {
+        content: '-';
+      }
+    </style>
+  </head>
+  <body>
+    <h3 style="text-align: center">pseudo elements</h3>
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt corporis tempore dicta aliquid eveniet, vitae repellat facilis, nemo culpa eos
+      temporibus esse laboriosam ducimus asperiores adipisci. Id ea in quia?
+    </p>
+    <p class="plus">Woody</p>
+    <p class="plus">BUZZ</p>
+    <p class="plus">rex</p>
+  </body>
+</html>
