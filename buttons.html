@@ -6,6 +6,9 @@
       body {
         text-align: center;
       }
+      li {
+        list-style: none;
+      }
       .result {
         background-color: blue;
       }
@@ -20,6 +23,14 @@
     </div>
     <p id="result" class="result"></p>
     <span class="a b">ClassList a b</span>
+    <h1>Species</h1>
+    <p id="species"></p>
+
+    <ul>
+      <li onclick="showDetails(this)" id="owl" data-animal-type="bird">Owl</li>
+      <li onclick="showDetails(this)" id="salmon" data-animal-type="fish">Salmon</li>
+      <li onclick="showDetails(this)" id="tarantula" data-animal-type="spider">Tarantula</li>
+    </ul>
 
     <script>
       const btns = document.querySelectorAll('button[id]');
@@ -50,6 +61,11 @@
         let result = classes.toggle('c');
         console.log(result);
         span.innerHTML = `"c" ${result ? 'added' : 'removed'} ; Classlist ${classes} `;
+      }
+
+      function showDetails(animal) {
+        const anial = animal.dataset.animalType;
+        species.textContent = `${anial} is of ${animal.textContent} species`;
       }
     </script>
   </body>
