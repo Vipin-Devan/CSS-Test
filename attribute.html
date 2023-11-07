@@ -19,6 +19,19 @@
         background-color: palegreen;
         cursor: pointer;
       }
+
+      /* attribute starts with */
+
+      p[title^='Fre'] {
+        color: blueviolet;
+      }
+
+      p[title~='Free'] {
+        text-decoration: underline;
+      }
+      p[data-id] {
+        color: chartreuse;
+      }
     </style>
   </head>
   <body>
@@ -27,5 +40,7 @@
     <input type="submit" placeholder="button" value="click" />
     <input type="radio" id="huey" name="drone" value="huey" checked />
     <label for="huey">Huey</label>
+    <p title="Free Web tutorials">W3Schools.com</p>
+    <p title="chamoion" data-id="4">Vipin</p>
   </body>
 </html>
