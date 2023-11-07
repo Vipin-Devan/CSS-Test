@@ -14,12 +14,27 @@
       }
       /* selcts by comma multiple elements by  */
       /* p,
-      button {
-        color: red;
-      } */
+            button {
+              color: red;
+            } */
 
       #outer p {
         color: blue;
+      }
+      /* direct descents */
+      #inner > p {
+        color: green;
+      }
+      /* all p elements immediately after h3 tag no descendants*/
+      h3 + p {
+        color: blue;
+        text-decoration: underline;
+      }
+
+      /* h4 immediatley before p */
+
+      p ~ h4 {
+        color: orangered;
       }
     </style>
   </head>
@@ -32,12 +47,28 @@
     <button>click me</button>
     <br />
     <div id="outer">
-      <div class="inner">
+      <div id="inner">
         <p>I m p inside div tag</p>
         <p>I m p inside div tag</p>
         <p>I m p inside div tag</p>
         <p>I m p inside div tag</p>
       </div>
     </div>
+
+    <br />
+
+    <h3>h3 tag</h3>
+    <p>p tag</p>
+    <br />
+    <h4>h4 tag</h4>
+    <p>p tag</p>
+    <br />
+
+    <h3>h3 tag</h3>
+    <p>p tag</p>
+    <br />
+    <h4>h4 tag</h4>
+    <p>p tag</p>
+    <br />
   </body>
 </html>

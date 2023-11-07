@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: arial;
+      }
+
+      h2 {
+        text-align: center;
+      }
+      /* unvisited link */
+      a:link {
+        text-decoration: none;
+      }
+      /* hovered link */
+      a:hover {
+        color: orangered;
+      }
+      /* active links */
+      a:active {
+        color: lawngreen;
+      }
+      /*visited links */
+      a:visited {
+        color: red;
+      }
+
+      /* checked */
+      input[type='checkbox']:checked {
+        outline: 2px solid blue;
+      }
+
+      input[type='radio']:checked {
+        outline: 2px solid blue;
+      }
+
+      /* disbaled */
+      input[type='text']:disabled {
+        outline: 2px solid blue;
+      }
+
+      /* focus */
+      #cool:focus {
+        background-color: aqua;
+      }
+
+      /* nthchild */
+      p:nth-child(4) {
+        color: antiquewhite;
+      }
+      /* from down uop */
+      p:nth-last-child(1) {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS combinator selectors</h2>
+    <a href="#">click me</a>
+    <br />
+    <input type="checkbox" />
+    <input type="radio" />
+    <input type="text" placeholder="tyoe gere" disabled />
+    <br />
+    <input type="text" id="cool" />
+    <br />
+    <div>
+      <p>her ther</p>
+      <p>her ther</p>
+      <p>her ther</p>
+      <p>her ther</p>
+      <p>her ther</p>
+    </div>
+  </body>
+</html>
