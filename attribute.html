@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* attribute selector */
+      input[type] {
+        border: 2px solid orangered;
+      }
+
+      /* attribute value */
+      input[type='text'] {
+        background-color: palegreen;
+      }
+      input[type='submit'] {
+        font-size: 19px;
+        background-color: palegreen;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="text" />
+    <input type="email" placeholder="email" />
+    <input type="submit" placeholder="button" value="click" />
+    <input type="radio" id="huey" name="drone" value="huey" checked />
+    <label for="huey">Huey</label>
+  </body>
+</html>
