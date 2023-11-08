@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .title {
+        text-align: center;
+      }
+      #outer {
+        width: 700px;
+        height: 500px;
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+        margin: auto;
+        border: 1px solid green;
+        background: linear-gradient(to right, green, yellow);
+      }
+      #imgContainer {
+        width: 60%;
+        height: 90%;
+        margin: 30px auto;
+        border: 1px solid green;
+      }
+      .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .details {
+        width: 700px;
+        padding: 20px;
+        margin: auto;
+        background-color: black;
+        color: white;
+        text-align: center;
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 45px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Centering an element with flexbox</h1>
+
+    <div id="outer">
+      <div id="imgContainer">
+        <img
+          class="image"
+          src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="img"
+        />
+      </div>
+    </div>
+    <div class="details">
+      <p>Game:Sonice the hedgehog</p>
+      <p>Year:1991</p>
+      <p>Platform:SEGA</p>
+    </div>
+  </body>
+</html>
