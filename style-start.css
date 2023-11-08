@@ -148,16 +148,18 @@ h3 {
   width: min(95%, 70rem);
   margin-inline: auto;
   display: grid;
-  gap: 20px;
-  grid-template-areas:
+  gap: 1.5rem;
+  /* keep same width for implict crearted */
+  /* grid-auto-columns: 1fr; */
+  /* grid-template-areas:
     'one'
     'two'
     'three'
     'four'
-    'five';
+    'five'; */
 }
 
-.testimonial:nth-child(1) {
+/* .testimonial:nth-child(1) {
   grid-area: one;
 }
 
@@ -172,17 +174,22 @@ h3 {
 }
 .testimonial:nth-child(5) {
   grid-area: five;
-}
-/* 
-@media (min-width: 50em) {
-  .testimonial-grid {
-    grid-template-areas:
-      'one one two five'
-      'three four four five';
-  }
 } */
 
-@media (min-width: 60em) {
+@media (min-width: 80em) {
+  .testimonial-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .testimonial:nth-child(5) {
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+}
+/* @media (min-width: 60em) {
   .testimonial-grid {
     grid-template-areas:
       'one one two '
@@ -197,7 +204,7 @@ h3 {
       'one one two five'
       'three four four five';
   }
-}
+} */
 .testimonial {
   font-size: var(--fs-400);
   padding: 2rem;
