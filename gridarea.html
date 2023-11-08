@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        width: 570px;
+
+        display: grid;
+
+        margin: 0 auto;
+        grid-template-rows: 60px auto 100px;
+        grid-template-areas:
+          'h h h'
+          'menu main right'
+          'menu footer footer';
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      @media only screen and (min-width: 550px) {
+        .item1 {
+          grid-area: 1 / span 3 / 2 / 4;
+        }
+        /* strart on row 3 col 3 and end on row4 col 4 */
+        .item2 {
+          grid-area: 3 / 3 / 4 / 4;
+        }
+        .item3 {
+          grid-area: 2 / 1 / 3 / 2;
+        }
+        /* strat on row 2 col 2 and  span row 2 end col 3 */
+        .item4 {
+          grid-area: 2 / 2 / span 2 / 3;
+        }
+        .item5 {
+          grid-area: 3 / 1 / 4 / 2;
+        }
+        .item6 {
+          grid-area: 2 / 3 / 3 / 4;
+        }
+      }
+
+      .container {
+        width: 570px;
+        margin: 70px auto;
+        display: grid;
+        grid-template-rows: 100px auto 70px;
+
+        grid-template-areas:
+          'h h h'
+          'm m s'
+          'f f f';
+
+        gap: 10px;
+        background-color: #2196f3;
+        padding: 10px;
+      }
+
+      .item7 {
+        grid-area: h;
+      }
+      .item8 {
+        grid-area: m;
+      }
+      .item9 {
+        grid-area: s;
+      }
+      .item10 {
+        grid-area: f;
+      }
+
+      .container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>The grid-area Property</h1>
+
+    <p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+    <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+    <p>This grid layout contains six columns and three rows:</p>
+
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+    </div>
+
+    <div class="container">
+      <div class="item7">header</div>
+      <div class="item8">main</div>
+      <div class="item9">siderbar</div>
+      <div class="item10">footer</div>
+    </div>
+  </body>
+</html>

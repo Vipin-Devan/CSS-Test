@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .container{
+            width:95vw;
+            height:60vh;
+            background-color: yellow;
+            margin:10px auto;
+            outline:8px solid green;
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr;
+            grid-template-columns: repeat(8,1fr); */
+            /* grid-template-columns: 1fr minmax(500px, 1fr); */
+         
+            /* grid-template-columns: [col-start] 2fr [col-2] 1fr [col-3] 1fr [col-end]; */
+            grid-template-columns: repeat(3,150px);
+            grid-template-rows: 100px 50px;
+          grid-auto-rows:50px;
+        
+          align-items:center;
+          justify-items: s;
+          /* shorthand for  align-items:center;
+          justify-items: start;  */
+          place-items: stretch stretch;
+
+          /* for content */
+
+          align-content:end;
+          justify-content: center;
+          /* shorthand for content */
+          place-content: center space-evenly;
+        }
+
+        .item{
+            /* height:16.6%; */
+            text-align:center;
+            font-size: 1.5em;
+          
+         
+          outline:1px solid grey;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">CSS GRID</h1>
+    <span style="font-size: 2em">#container </span>--> grid template colums; grid template rows; grid template areas ;grid templat;e grid column gap;
+    grid row gap; grid gap ;justify items align items; place items; justify-content align-content; place content;grid auto columns; grid auto rows;
+    gRID 
+    <br>
+
+    </br><span style="font-size: 2em">items</span>--> grid column start ; grid column end; grid row start; grid row end; grid-column; grid-row; grid-area; justify-self; align-self;place-self
+
+
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+        <div class="item five">5</div>
+        <div class="item six">6</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+        <div class="item five">5</div>
+        <div class="item six">6</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .title {
+        text-align: center;
+      }
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+      header {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        padding: 0px 20px;
+        box-shadow: 0px 1px 5px grey;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #logo {
+        flex-basis: 40%;
+      }
+
+      nav {
+        flex-basis: 60%;
+        display: flex;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+        flex-grow: 1;
+      }
+      .active {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img
+          class="image"
+          src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="img"
+        />
+      </div>
+
+      <nav>
+        <a href="#" class="active"> Home</a>
+        <a href="#"> About</a>
+        <a href="#"> Tutorials</a>
+        <a href="#" class="highlight"> Contact</a>
+      </nav>
+    </header>
+    <!-- <div id="outer">
+      <div id="imgContainer">
+        <img
+          class="image"
+          src="https://images.pexels.com/photos/11555718/pexels-photo-11555718.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="img"
+        />
+      </div>
+    </div>
+    <div class="details">
+      <p>Game:Sonice the hedgehog</p>
+      <p>Year:1991</p>
+      <p>Platform:SEGA</p>
+    </div> -->
+  </body>
+</html>
