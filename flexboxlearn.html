@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 1000px;
+        height: 400px;
+        background-color: skyblue;
+        border: 1px solid skyblue;
+        margin: 80px auto;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-content: space-between;
+      }
+      .item {
+        flex-basis: 200px;
+        height: 80px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: greenyellow;
+        text-align: center;
+      }
+
+      /* .one {
+        order: 1;
+      }
+      .four {
+        order: -1;
+      } */
+    </style>
+  </head>
+  <body>
+    <h2>container properties</h2>
+    <p>display, flex-direction , flex-wrap; flex-flow, justify content align-items align -content</p>
+    <h2>items properties</h2>
+    <p>order; flex-grow; flex-shrink; flex-basis; flex; align-self</p>
+
+    <div class="container">
+      <div class="item one">1</div>
+      <div class="item two">2</div>
+      <div class="item three">3</div>
+      <div class="item four">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+  </body>
+</html>
